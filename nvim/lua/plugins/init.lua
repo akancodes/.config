@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
   use { 'akinsho/bufferline.nvim', tag = "v2.*" }
   -- Git Signs
   use 'lewis6991/gitsigns.nvim'
+  -- Fugitive
+  use 'tpope/vim-fugitive'
   if packer_bootstrap then
     require('packer').sync()
   end
