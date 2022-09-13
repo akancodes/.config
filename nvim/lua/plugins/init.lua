@@ -20,9 +20,9 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   -- Colorschemes
-  use 'EdenEast/nightfox.nvim'    -- Nightfox
-  -- Vim Startify
-  use 'mhinz/vim-startify'
+  use 'EdenEast/nightfox.nvim'
+  -- Alpha
+  use 'goolord/alpha-nvim' -- Start screen
   -- Mason
   use 'williamboman/mason.nvim'
   -- Language Server Protocol
@@ -45,6 +45,13 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   -- Fugitive
   use 'tpope/vim-fugitive'
+  -- Surround
+  use 'tpope/vim-surround'
+  -- Telescope
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-lua/plenary.nvim'
+  -- Toggleterm
+  use { "akinsho/toggleterm.nvim", tag = '*' }
   if packer_bootstrap then
     require('packer').sync()
   end

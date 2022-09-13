@@ -1,5 +1,5 @@
 local setup = function()
-  vim.cmd('colorscheme carbonfox')                                     -- set colorscheme to nightfox
+  vim.cmd('colorscheme duskfox')
   vim.o.termguicolors = true -- todo: update this line
   vim.o.clipboard = 'unnamedplus'
 

@@ -1,4 +1,8 @@
-require("presence"):setup({
+local status_ok, presence = pcall(require, 'presence')
+
+if not status_ok then return end
+
+presence:setup({
     -- General options
     auto_update         = true,                       -- Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)
     neovim_image_text   = "akancodes",                -- Text displayed when hovered over the Neovim image
