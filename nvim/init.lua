@@ -1,4 +1,4 @@
-require('settings').setup()
+require('settings')
 require('maps')
 
 require('plugins')
